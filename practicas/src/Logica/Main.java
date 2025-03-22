@@ -21,5 +21,6 @@ public class Main {
 
         Estudiante alucno = new Estudiante();
         alucno.agregarEstudiante();
+        alucno.mostrarEstudiantes();
     }
 }

@@ -75,7 +75,6 @@ public class Estudiante {
 
     public void agregarEstudiante(){
         boolean condicion = true;
-        
         while (condicion) {
             System.out.println("\npresiona 1 para agregar un estudiante, presiona 0 para salir: ");
             numIngresado = scanner.nextInt();
@@ -104,10 +103,22 @@ public class Estudiante {
                 default:
                     System.out.println("\nOpción no válida");
         }
-        
         }
         
-        
+    }
+    public void mostrarEstudiantes() {
+        if (listaEstudiantes.isEmpty()) {
+            System.out.println("\nNo hay estudiantes registrados.");
+        } else {
+            System.out.println("\nLista de estudiantes:");
+            for (Estudiante estudiante : listaEstudiantes) {
+                System.out.println("Cédula: " + estudiante.getCedula());
+                System.out.println("Nombre: " + estudiante.getNombre());
+                System.out.println("Apellido: " + estudiante.getApellido());
+                System.out.println("Nota: " + estudiante.getNota());
+                System.out.println("-------------------------");
+            }
+        }
     }
 
 }
