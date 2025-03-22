@@ -1,21 +1,52 @@
 package Logica;
 
 public class Estudiante {
-    int id;
+    int cedula;
     String nombre;
     String apellido;
-    int nota;
-    //en los metodos void no hay return, ya que estos metodos solo hacen procedimientos que no se van a reutilizar nuevamente en el codigo
-    public void mostrarNombre(){
-        System.out.println("el nombre del estudiante es: " + nombre);
+    double nota;
+    int edad;
+    public Estudiante(int cedula, String nombre, String apellido, double nota) {//constructor con parametros
+        this.cedula = cedula;
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.nota = nota;
+    }
+    
+    public int getCedula() {
+        return cedula;
     }
 
-    public void resultadoAprobacion(int nota){
-        if(nota >=3){
-            System.out.println("el estudiante: " + nombre + "aprobo con una nota de: " + nota);
-        }
-        else{
-            System.out.println("el estudiante: " + nombre + "no aprobo, su nota fue de: " + nota);
-        }
+    public void setCedula(int cedula) {
+        this.cedula = cedula;
     }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getApellido() {
+        return apellido;
+    }
+
+    public void setApellido(String apellido) {
+        this.apellido = apellido;
+    }
+
+    public double getNota() {
+        return nota;
+    }
+
+    public void setNota(double nota) {
+        this.nota = nota;
+    }
+
+    public void mostrarInformacion(){
+        System.out.println("nombre: " + nombre + " apellido: " + apellido);
+    }
+
 }
