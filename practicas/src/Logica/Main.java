@@ -19,6 +19,7 @@ public class Main {
         System.out.println("El id del docente 1 es: " + anaMaria.getId());
         System.out.println("El nombre del docente 1 es: " + anaMaria.getNombre() + "\nEl apellido del docente 1 es: " + anaMaria.getApellido());
 
-
+        Estudiante alucno = new Estudiante();
+        alucno.agregarEstudiante();
     }
 }
