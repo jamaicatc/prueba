@@ -111,11 +111,11 @@ public class Estudiante {
             System.out.println("\nNo hay estudiantes registrados.");
         } else {
             System.out.println("\nLista de estudiantes:");
-            for (Estudiante estudiante : listaEstudiantes) {
-                System.out.println("Cédula: " + estudiante.getCedula());
-                System.out.println("Nombre: " + estudiante.getNombre());
-                System.out.println("Apellido: " + estudiante.getApellido());
-                System.out.println("Nota: " + estudiante.getNota());
+            for (Estudiante e : listaEstudiantes) {
+                System.out.println("Cédula: " + e.getCedula());
+                System.out.println("Nombre: " + e.getNombre());
+                System.out.println("Apellido: " + e.getApellido());
+                System.out.println("Nota: " + e.getNota());
                 System.out.println("-------------------------");
             }
         }
