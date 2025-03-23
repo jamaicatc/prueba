@@ -121,4 +121,31 @@ public class Estudiante {
         }
     }
 
+        public void actualizarNota(int cedula){
+            double nuevaNota;
+            if(listaEstudiantes.isEmpty()){
+                System.out.println("\nNo hay estudiantes registrados");
+            } else {
+                System.out.println("\ningrese la cedula del estudiante: ");
+                int cedIngresada = scanner.nextInt();
+                scanner.nextLine();
+                boolean encontrado = false;
+                for(Estudiante e: listaEstudiantes){
+                    if(e.getCedula() == cedIngresada){
+                        System.out.println("ingrese la nueva nota para el estudiante: ");
+                        nuevaNota = scanner.nextDouble();
+                        scanner.nextLine();
+                        e.setNota(nuevaNota);
+                        System.out.println("Nota actualizada correctamente");
+                        encontrado = true;
+                        break;
+                    }
+                }
+
+                if(!encontrado){
+                    System.out.println("error, estudiante no encontrado");   
+
+                }
+            }
+        }
 }
