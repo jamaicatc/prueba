@@ -22,7 +22,7 @@ public class Main {
         Estudiante alucno = new Estudiante();
         alucno.agregarEstudiante();
         alucno.mostrarEstudiantes();
-        alucno.actualizarNota(0);
+        alucno.actualizarDatos();
         alucno.mostrarEstudiantes();
         alucno.eliminarEstudiante(0);
         alucno.mostrarEstudiantes();
