@@ -1,7 +1,5 @@
 package Logica;
 
-import java.lang.annotation.Documented;
-
 public class Main {
     public static void main(String[] args) {
         // crear objetos de tipo estudiante (sirve tambien para crear objetos de otro tipo)
@@ -16,5 +14,10 @@ public class Main {
         Docente objeto = new Docente();
         objeto.agregarDocente();
         objeto.mostrarDocentes();
+
+        objeto.actualizarDocente();
+        objeto.mostrarDocentes();
+        
+        objeto.eliminarDocente();
     }
 }
