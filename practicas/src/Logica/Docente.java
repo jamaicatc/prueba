@@ -1,9 +1,15 @@
 package Logica;
 
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class Docente {
     int id;
     String nombre;
     String apellido;
+    
+    ArrayList<Docente> listaDocentes = new ArrayList<>();
+    Scanner scanner = new Scanner(System.in);
 
     public Docente() {
     }
@@ -12,6 +18,14 @@ public class Docente {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
+    }
+
+    public ArrayList<Docente> getListaDocentes () {
+        return listaDocentes;
+    }
+
+    public void setListaEstudiantes (ArrayList<Docente> listaDocentes) {
+        this.listaDocentes = listaDocentes;
     }
 
     public int getId() {
@@ -38,5 +52,5 @@ public class Docente {
         this.apellido = apellido;
     }
 
-    
+    //CRUD de docente, Create, Read, Update, Delete
 }
